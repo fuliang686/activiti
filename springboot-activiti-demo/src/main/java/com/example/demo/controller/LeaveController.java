@@ -53,7 +53,7 @@ public class LeaveController {
      */
     @RequestMapping(value = "/startLeave", method = RequestMethod.POST)
     @ResponseBody
-    @ApiOperation("请假申请申请")
+    @ApiOperation("请假申请")
     public String start_leave(@ModelAttribute("leave") LeaveApply leave) {
         String userId = Constants.userName;
         Map<String, Object> variables = new HashMap<String, Object>();
